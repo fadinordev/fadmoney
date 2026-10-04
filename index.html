@@ -1,1 +1,243 @@
-Привет
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FadMoney — Privacy Policy</title>
+<meta name="description" content="Privacy policy of FadMoney, an offline personal finance tracker for Android by FadinorDev.">
+<style>
+:root{--bg:#fff;--fg:#1a2420;--muted:#5b6b64;--card:#f3f8f5;--line:#dbe7e1;--accent:#30B07A;--accent-fg:#fff;--link:#1b8a5c}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1512;--fg:#e6efea;--muted:#9bb0a6;--card:#17211c;--line:#26352d;--link:#4fd09a}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:20px 16px 56px}
+header{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;padding-bottom:16px;border-bottom:1px solid var(--line)}
+.brand{font-weight:700;font-size:1.15rem;display:flex;align-items:center;gap:10px}
+.dot{width:14px;height:14px;border-radius:50%;background:var(--accent);display:inline-block}
+.switch{display:flex;gap:6px}
+.switch button{font:inherit;font-size:.9rem;padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--fg);cursor:pointer}
+.switch button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-fg);font-weight:600}
+.switch button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+h1{font-size:1.8rem;line-height:1.25;margin:28px 0 4px}
+h2{font-size:1.2rem;margin:32px 0 8px;padding-top:4px}
+p,ul{margin:8px 0}
+ul{padding-left:22px}
+li{margin:4px 0}
+a{color:var(--link)}
+.meta{color:var(--muted);font-size:.95rem;margin:0 0 16px}
+.summary{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;padding:12px 16px;margin:16px 0}
+.summary p{margin:6px 0}
+code{background:var(--card);border:1px solid var(--line);border-radius:5px;padding:1px 5px;font-size:.92em}
+.lang{display:none}
+body[data-lang="en"] .lang[lang="en"],body[data-lang="uk"] .lang[lang="uk"],body[data-lang="ru"] .lang[lang="ru"]{display:block}
+footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body data-lang="en">
+<div class="wrap">
+<header>
+  <div class="brand"><span class="dot" aria-hidden="true"></span>FadMoney</div>
+  <nav class="switch" aria-label="Language">
+    <button type="button" data-set="en" aria-pressed="true">English</button>
+    <button type="button" data-set="uk" aria-pressed="false">Українська</button>
+    <button type="button" data-set="ru" aria-pressed="false">Русский</button>
+  </nav>
+</header>
+
+<!-- ============ ENGLISH ============ -->
+<main class="lang" lang="en" id="en">
+<h1>FadMoney Privacy Policy</h1>
+<p class="meta">Effective date: 4 October 2026 · App version 1.1.0 · Package <code>com.fadmoney.app</code></p>
+
+<h2>1. Who we are</h2>
+<p>FadMoney (the “app”) is a personal finance tracker for Android published by the developer <strong>FadinorDev</strong> (“we”, “us”). This policy explains what information the app handles and how. Contact: <a href="mailto:fadinordev@gmail.com">fadinordev@gmail.com</a>.</p>
+
+<div class="summary">
+<p><strong>Summary: we collect nothing.</strong></p>
+<p>FadMoney has no accounts, no registration and no sign-in. It contains no ads, no analytics, no crash reporting and no third-party SDKs that collect data. Everything you enter stays on your device. We do not receive, store, sell or share any of your personal or financial data.</p>
+</div>
+
+<h2>2. Data stored on your device</h2>
+<p>FadMoney is an offline app. The information you enter — accounts and account groups, expenses, income, transfers, categories and subcategories, notes, amounts, currencies, exchange rates and your settings — is stored only in a local database on your device. We have no access to it and it is never uploaded to us or to anyone else.</p>
+<p>Android cloud backup and device-to-device transfer of app data are disabled in the app, so this data is not copied to your Google account by the app.</p>
+
+<h2>3. Network requests</h2>
+<p>The app uses the <code>INTERNET</code> permission only to download public currency exchange rates (for UAH, USD and EUR). These are plain GET requests that contain no personal data, no financial data and no identifiers from the app. The rates are requested from:</p>
+<ul>
+  <li><code>open.er-api.com</code> (open exchange-rate API);</li>
+  <li><code>cdn.jsdelivr.net</code> (the “currency-api” dataset by fawazahmed0, delivered through jsDelivr);</li>
+  <li><code>latest.currency-api.pages.dev</code> (mirror of the same dataset);</li>
+  <li><code>bank.gov.ua</code> (the National Bank of Ukraine).</li>
+</ul>
+<p>As with any web request, these servers can see the IP address of your device and the time of the request. The app sends nothing else. You can use FadMoney fully offline with the bundled rates or by setting rates manually.</p>
+
+<h2>4. Permissions</h2>
+<ul>
+  <li><strong>INTERNET</strong> — only to download public exchange rates, as described above.</li>
+  <li><strong>USE_BIOMETRIC</strong> — to let you unlock the app with a fingerprint or face. Biometric data is processed entirely by the Android system; the app only receives a “success” or “failure” result and never sees or stores your biometrics.</li>
+</ul>
+<p>The app does not request access to your contacts, location, camera, microphone, photos, SMS or any other personal data.</p>
+
+<h2>5. Backups</h2>
+<p>You can manually export your data to a <code>.fad</code> backup file and import it later. The file is saved to a location you choose with the Android system file picker. The app does not upload the backup anywhere. The file is not encrypted, so you are responsible for where you keep it and with whom you share it.</p>
+
+<h2>6. Security (PIN and biometrics)</h2>
+<p>You can protect the app with a PIN and/or biometric unlock. The PIN is stored on the device only as a salted hash, never in plain text, and is never sent anywhere. Your data stays in the app’s private storage on your device; protecting the device itself (screen lock, updates) remains your responsibility.</p>
+
+<h2>7. Third parties</h2>
+<p>We do not share data with third parties, because we do not collect any. The app contains no advertising, analytics or tracking libraries. The only external services involved are the public exchange-rate providers listed in section 3 (open.er-api.com, jsDelivr / fawazahmed0 currency-api, currency-api.pages.dev and the National Bank of Ukraine); they receive only the technical information inherent to any web request, such as your IP address, and are governed by their own policies.</p>
+
+<h2>8. Children</h2>
+<p>FadMoney is not directed at children and is intended for users aged 18 and over. We do not knowingly collect any information from anyone, including children.</p>
+
+<h2>9. Data deletion and retention</h2>
+<p>We hold no copies of your data, so there is nothing for us to retain or delete. Your data remains on your device until you remove it. You can delete individual items inside the app, clear the app’s storage in Android Settings → Apps → FadMoney → Storage, or uninstall the app; any of these removes the data. Backup <code>.fad</code> files you exported are separate files under your control and must be deleted by you.</p>
+
+<h2>10. Changes to this policy</h2>
+<p>We may update this policy, for example if the app’s features change. The current version is always available at this page, and the effective date at the top shows when it was last changed. If a change affects how data is handled, we will update the policy before the new behavior is released.</p>
+
+<h2>11. Contact</h2>
+<p>If you have questions about this policy, write to <strong>FadinorDev</strong>: <a href="mailto:fadinordev@gmail.com">fadinordev@gmail.com</a>.</p>
+</main>
+
+<!-- ============ УКРАЇНСЬКА ============ -->
+<main class="lang" lang="uk" id="uk">
+<h1>Політика конфіденційності FadMoney</h1>
+<p class="meta">Дата набрання чинності: 4 жовтня 2026 р. · Версія застосунку 1.1.0 · Пакет <code>com.fadmoney.app</code></p>
+
+<h2>1. Хто ми</h2>
+<p>FadMoney («застосунок») — це трекер особистих фінансів для Android, який публікує розробник <strong>FadinorDev</strong> («ми»). Ця політика пояснює, які дані обробляє застосунок і як саме. Контакт: <a href="mailto:fadinordev@gmail.com">fadinordev@gmail.com</a>.</p>
+
+<div class="summary">
+<p><strong>Коротко: ми нічого не збираємо.</strong></p>
+<p>У FadMoney немає облікових записів, реєстрації чи входу. У ньому немає реклами, аналітики, звітів про збої та сторонніх SDK, що збирають дані. Усе, що ви вводите, залишається на вашому пристрої. Ми не отримуємо, не зберігаємо, не продаємо й не передаємо жодних ваших особистих чи фінансових даних.</p>
+</div>
+
+<h2>2. Дані на вашому пристрої</h2>
+<p>FadMoney працює офлайн. Інформація, яку ви вводите, — рахунки та групи рахунків, витрати, доходи, перекази, категорії й підкатегорії, нотатки, суми, валюти, курси та налаштування — зберігається лише в локальній базі даних на вашому пристрої. Ми не маємо до неї доступу, і вона ніколи не надсилається ні нам, ні комусь іншому.</p>
+<p>Хмарне резервне копіювання Android і перенесення даних застосунку між пристроями в застосунку вимкнені, тож застосунок не копіює ці дані до вашого облікового запису Google.</p>
+
+<h2>3. Мережеві запити</h2>
+<p>Дозвіл <code>INTERNET</code> застосунок використовує лише для завантаження публічних курсів валют (для UAH, USD та EUR). Це прості GET-запити, що не містять ні особистих, ні фінансових даних, ні ідентифікаторів застосунку. Курси запитуються з:</p>
+<ul>
+  <li><code>open.er-api.com</code> (відкритий API курсів валют);</li>
+  <li><code>cdn.jsdelivr.net</code> (набір даних «currency-api» від fawazahmed0, що роздається через jsDelivr);</li>
+  <li><code>latest.currency-api.pages.dev</code> (дзеркало того самого набору даних);</li>
+  <li><code>bank.gov.ua</code> (Національний банк України).</li>
+</ul>
+<p>Як і під час будь-якого вебзапиту, ці сервери можуть бачити IP-адресу вашого пристрою та час запиту. Більше застосунок нічого не надсилає. FadMoney повністю працює й без інтернету — із вбудованими курсами або з курсами, які ви задали вручну.</p>
+
+<h2>4. Дозволи</h2>
+<ul>
+  <li><strong>INTERNET</strong> — лише для завантаження публічних курсів валют, як описано вище.</li>
+  <li><strong>USE_BIOMETRIC</strong> — щоб ви могли розблоковувати застосунок відбитком пальця чи обличчям. Біометричні дані повністю обробляє система Android; застосунок отримує лише результат «успішно» або «невдало» і ніколи не бачить та не зберігає вашу біометрію.</li>
+</ul>
+<p>Застосунок не запитує доступу до контактів, геолокації, камери, мікрофона, фото, SMS чи будь-яких інших особистих даних.</p>
+
+<h2>5. Резервні копії</h2>
+<p>Ви можете вручну експортувати свої дані у файл резервної копії <code>.fad</code> і пізніше імпортувати його. Файл зберігається в місці, яке ви обираєте через системний засіб вибору файлів Android. Застосунок нікуди не завантажує резервну копію. Файл не зашифрований, тому ви самі відповідаєте за те, де його зберігати і кому показувати.</p>
+
+<h2>6. Безпека (PIN-код і біометрія)</h2>
+<p>Ви можете захистити застосунок PIN-кодом і/або біометричним розблокуванням. PIN-код зберігається на пристрої лише у вигляді хешу з сіллю, а не відкритим текстом, і нікуди не надсилається. Ваші дані лежать у закритому сховищі застосунку на пристрої; захист самого пристрою (блокування екрана, оновлення) залишається вашою відповідальністю.</p>
+
+<h2>7. Треті сторони</h2>
+<p>Ми не передаємо дані третім сторонам, бо не збираємо їх. У застосунку немає рекламних, аналітичних чи трекінгових бібліотек. Єдині зовнішні сервіси — публічні постачальники курсів валют із розділу 3 (open.er-api.com, jsDelivr / fawazahmed0 currency-api, currency-api.pages.dev та Національний банк України); вони отримують лише технічну інформацію, властиву будь-якому вебзапиту, наприклад IP-адресу, і керуються власними політиками.</p>
+
+<h2>8. Діти</h2>
+<p>FadMoney не призначений для дітей і розрахований на користувачів віком від 18 років. Ми свідомо не збираємо жодної інформації ні від кого, зокрема від дітей.</p>
+
+<h2>9. Видалення та зберігання даних</h2>
+<p>Ми не тримаємо копій ваших даних, тож нам нічого зберігати чи видаляти. Ваші дані залишаються на пристрої, доки ви їх не видалите. Можна видалити окремі записи в застосунку, очистити сховище застосунку в Налаштування Android → Застосунки → FadMoney → Пам’ять або видалити сам застосунок — у кожному з цих випадків дані зникають. Експортовані файли <code>.fad</code> — це окремі файли під вашим контролем, і видаляти їх треба самостійно.</p>
+
+<h2>10. Зміни до політики</h2>
+<p>Ми можемо оновлювати цю політику, наприклад якщо зміняться функції застосунку. Актуальна версія завжди доступна на цій сторінці, а дата набрання чинності вгорі показує, коли її востаннє змінювали. Якщо зміна впливає на обробку даних, ми оновимо політику до випуску нової поведінки.</p>
+
+<h2>11. Контакти</h2>
+<p>Якщо маєте запитання щодо цієї політики, пишіть <strong>FadinorDev</strong>: <a href="mailto:fadinordev@gmail.com">fadinordev@gmail.com</a>.</p>
+</main>
+
+<!-- ============ РУССКИЙ ============ -->
+<main class="lang" lang="ru" id="ru">
+<h1>Политика конфиденциальности FadMoney</h1>
+<p class="meta">Дата вступления в силу: 4 октября 2026 г. · Версия приложения 1.1.0 · Пакет <code>com.fadmoney.app</code></p>
+
+<h2>1. Кто мы</h2>
+<p>FadMoney («приложение») — трекер личных финансов для Android, который публикует разработчик <strong>FadinorDev</strong> («мы»). Эта политика объясняет, какие данные обрабатывает приложение и как именно. Контакт: <a href="mailto:fadinordev@gmail.com">fadinordev@gmail.com</a>.</p>
+
+<div class="summary">
+<p><strong>Коротко: мы ничего не собираем.</strong></p>
+<p>В FadMoney нет учётных записей, регистрации и входа. В нём нет рекламы, аналитики, отчётов о сбоях и сторонних SDK, собирающих данные. Всё, что вы вводите, остаётся на вашем устройстве. Мы не получаем, не храним, не продаём и не передаём никакие ваши личные или финансовые данные.</p>
+</div>
+
+<h2>2. Данные на вашем устройстве</h2>
+<p>FadMoney работает офлайн. Информация, которую вы вводите, — счета и группы счетов, расходы, доходы, переводы, категории и подкатегории, заметки, суммы, валюты, курсы и настройки — хранится только в локальной базе данных на вашем устройстве. У нас нет к ней доступа, и она никогда не отправляется ни нам, ни кому-либо ещё.</p>
+<p>Облачное резервное копирование Android и перенос данных приложения между устройствами в приложении отключены, поэтому приложение не копирует эти данные в ваш аккаунт Google.</p>
+
+<h2>3. Сетевые запросы</h2>
+<p>Разрешение <code>INTERNET</code> приложение использует только для загрузки публичных курсов валют (для UAH, USD и EUR). Это обычные GET-запросы, не содержащие ни личных, ни финансовых данных, ни идентификаторов приложения. Курсы запрашиваются с:</p>
+<ul>
+  <li><code>open.er-api.com</code> (открытый API курсов валют);</li>
+  <li><code>cdn.jsdelivr.net</code> (набор данных «currency-api» от fawazahmed0, раздаваемый через jsDelivr);</li>
+  <li><code>latest.currency-api.pages.dev</code> (зеркало того же набора данных);</li>
+  <li><code>bank.gov.ua</code> (Национальный банк Украины).</li>
+</ul>
+<p>Как и при любом веб-запросе, эти серверы могут видеть IP-адрес вашего устройства и время запроса. Больше приложение ничего не отправляет. FadMoney полностью работает и без интернета — со встроенными курсами или с курсами, заданными вручную.</p>
+
+<h2>4. Разрешения</h2>
+<ul>
+  <li><strong>INTERNET</strong> — только для загрузки публичных курсов валют, как описано выше.</li>
+  <li><strong>USE_BIOMETRIC</strong> — чтобы вы могли разблокировать приложение отпечатком пальца или лицом. Биометрические данные полностью обрабатывает система Android; приложение получает лишь результат «успешно» или «неудачно» и никогда не видит и не хранит вашу биометрию.</li>
+</ul>
+<p>Приложение не запрашивает доступ к контактам, геолокации, камере, микрофону, фото, SMS и любым другим личным данным.</p>
+
+<h2>5. Резервные копии</h2>
+<p>Вы можете вручную экспортировать свои данные в файл резервной копии <code>.fad</code> и позже импортировать его. Файл сохраняется в месте, которое вы выбираете через системное окно выбора файлов Android. Приложение никуда не загружает резервную копию. Файл не зашифрован, поэтому вы сами отвечаете за то, где его хранить и кому показывать.</p>
+
+<h2>6. Безопасность (PIN-код и биометрия)</h2>
+<p>Вы можете защитить приложение PIN-кодом и/или биометрической разблокировкой. PIN-код хранится на устройстве только в виде хеша с солью, а не открытым текстом, и никуда не отправляется. Ваши данные лежат в закрытом хранилище приложения на устройстве; защита самого устройства (блокировка экрана, обновления) остаётся вашей ответственностью.</p>
+
+<h2>7. Третьи стороны</h2>
+<p>Мы не передаём данные третьим сторонам, потому что не собираем их. В приложении нет рекламных, аналитических и трекинговых библиотек. Единственные внешние сервисы — публичные поставщики курсов валют из раздела 3 (open.er-api.com, jsDelivr / fawazahmed0 currency-api, currency-api.pages.dev и Национальный банк Украины); они получают только техническую информацию, присущую любому веб-запросу, например IP-адрес, и руководствуются собственными политиками.</p>
+
+<h2>8. Дети</h2>
+<p>FadMoney не предназначен для детей и рассчитан на пользователей от 18 лет. Мы сознательно не собираем никакой информации ни от кого, в том числе от детей.</p>
+
+<h2>9. Удаление и хранение данных</h2>
+<p>Мы не держим копий ваших данных, поэтому нам нечего хранить или удалять. Ваши данные остаются на устройстве, пока вы их не удалите. Можно удалить отдельные записи в приложении, очистить хранилище приложения в Настройки Android → Приложения → FadMoney → Память либо удалить само приложение — в любом из этих случаев данные исчезают. Экспортированные файлы <code>.fad</code> — это отдельные файлы под вашим контролем, и удалять их нужно самостоятельно.</p>
+
+<h2>10. Изменения политики</h2>
+<p>Мы можем обновлять эту политику, например если изменятся функции приложения. Актуальная версия всегда доступна на этой странице, а дата вступления в силу вверху показывает, когда её меняли в последний раз. Если изменение влияет на обработку данных, мы обновим политику до выхода нового поведения.</p>
+
+<h2>11. Контакты</h2>
+<p>Если у вас есть вопросы по этой политике, пишите <strong>FadinorDev</strong>: <a href="mailto:fadinordev@gmail.com">fadinordev@gmail.com</a>.</p>
+</main>
+
+<footer>© 2026 FadinorDev · FadMoney · <a href="mailto:fadinordev@gmail.com">fadinordev@gmail.com</a></footer>
+</div>
+<script>
+(function(){
+  var L=["en","uk","ru"],t={en:"FadMoney — Privacy Policy",uk:"FadMoney — Політика конфіденційності",ru:"FadMoney — Политика конфиденциальности"};
+  function pick(){
+    var q=(location.search.match(/[?&]lang=(en|uk|ru)\b/)||[])[1];
+    if(q)return q;
+    var h=location.hash.replace("#","");
+    if(L.indexOf(h)>-1)return h;
+    try{var s=localStorage.getItem("fadmoney_lang");if(L.indexOf(s)>-1)return s;}catch(e){}
+    return "en";
+  }
+  function apply(l,save){
+    document.body.setAttribute("data-lang",l);
+    document.documentElement.lang=l;
+    document.title=t[l];
+    var b=document.querySelectorAll(".switch button");
+    for(var i=0;i<b.length;i++)b[i].setAttribute("aria-pressed",b[i].getAttribute("data-set")===l?"true":"false");
+    if(save){try{localStorage.setItem("fadmoney_lang",l);}catch(e){}}
+  }
+  var b=document.querySelectorAll(".switch button");
+  for(var i=0;i<b.length;i++)b[i].addEventListener("click",function(){apply(this.getAttribute("data-set"),true);});
+  apply(pick(),false);
+})();
+</script>
+</body>
+</html>
